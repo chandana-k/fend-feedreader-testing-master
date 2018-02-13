@@ -22,4 +22,4 @@ Technologies used:
 - jQuery
 - HTML5 / CSS3
 
-[Live project link]( https://chandana-k.github.io/fend-feedreader-testing-master/)
+[Live project link](https://chandana-k.github.io/fend-feedreader-testing-master/)
