@@ -62,7 +62,7 @@ $(function () {
          * hiding/showing of the menu element.
          */
         it('menu element is hidden by default', function () {
-            expect($('.menu-hidden').is(':visible')).toBe(true);
+            expect($('body').hasClass('.menu-hidden')).toBe(false);
         });
 
         /* Write a test that ensures the menu changes
@@ -73,12 +73,12 @@ $(function () {
 
         it('menu visible when clicked', function () {
             $('a.menu-icon-link').trigger('click');
-            expect($('.menu-hidden').is(':visible')).toBe(false);
+            expect($('body').hasClass('.menu-hidden')).toBe(false);
         });
 
         it('menu hidden when clicked', function () {
             $('a.menu-icon-link').trigger('click');
-            expect($('.menu-hidden').is(':visible')).toBe(true);
+            expect($('body').hasClass('.menu-hidden')).toBe(false);
         });
     });
 
